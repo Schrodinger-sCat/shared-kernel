@@ -1,0 +1,19 @@
+package com.uber.microservice.sharedkernel.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.time.LocalDate;
+import java.util.List;
+
+@AllArgsConstructor
+@Getter
+@Setter
+public class Prescription {
+    private Long id;
+    private Long doctorId;
+    private Long patientId;
+    private List<Medicine> medicines;
+    private LocalDate prescriptionDate;
+}
